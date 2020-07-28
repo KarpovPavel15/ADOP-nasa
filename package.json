@@ -1,0 +1,24 @@
+{
+  "name": "rolling-scopes-school",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -watch dist/style/style.scss -o dist/style/style.css",
+    "testing": "npm test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarpovPavel15/rolling-scopes-school.git"
+  },
+  "author": "KPV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarpovPavel15/rolling-scopes-school/issues"
+  },
+  "homepage": "https://github.com/KarpovPavel15/rolling-scopes-school#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

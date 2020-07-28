@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1234566</title>
+    <link rel="stylesheet" href="dist/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="page" id="page">
+    <header class="header">
+        <div class="header__content">
+            <a href="#page" class="logo">
+                <img src="dist/images/SINGOLO.png" alt="logo"/>
+            </a>
+            <nav class="navigation header__navigation ">
+                <ul class="ul navigation__ul">
+                    <li><a class="navigation__link active" href="#page">HOME</a></li>
+                    <li><a class="navigation__link" href="#services">SERVICES</a></li>
+                    <li><a class="navigation__link" href="#portfolio">PORTFOLIO</a></li>
+                    <li><a class="navigation__link" href="#about">ABOUT</a></li>
+                    <li><a class="navigation__link" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger header__hamburger">
+                <a href="javascript:void(0);" class="hamburger__icon" onclick="hamburgerHandler()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div id="hamburger__links">
+                    <a class="hamburger__link active" href="#page">HOME</a>
+                    <a class="hamburger__link" href="#services">SERVICES</a>
+                    <a class="hamburger__link" href="#portfolio">PORTFOLIO</a>
+                    <a class="hamburger__link" href="#about">ABOUT</a>
+                    <a class="hamburger__link" href="#contact">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="divider header__divider"></div>
+    </header>
+    <main class="main">
+        <section class="slider main__slider">
+            <button class="slider__prevBtn" onclick="">
+                <img src="dist/images/prev.svg"/>
+            </button>
+            <div class="main__slider-content">
+                <img src="dist/images/iPhoneVertical.png">
+                <img src="dist/images/iPhoneHorizontal.png">
+            </div>
+            <button class="slider__nextBtn" onclick="">
+                <img src="dist/images/next.svg"/>
+            </button>
+        </section>
+        <div class="divider main__slider-divider"></div>
+        <section class="main__services" id="services">
+            <article class="main__service-article">
+                <h1>OUR SERVICES</h1>
+                <h3 class="main__service-article-description">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum. Duis mollis, non commodo luctus,
+                    nisi erat porttitor
+                    ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+                    condimentum nibh.
+                </h3>
+            </article>
+            <section class="advantages main__advantages">
+                <div class="advantages__first-line">
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/Ellipse.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">Custom Design</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/Bulb.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">Inovative Ideas</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/Heart.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">Love Is The Answer</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="advantages__second-line">
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/phone2.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">Responsive Layout</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/Bubble.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">24 / 7 Support</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                    <div class="advantage advantages__advantage">
+                        <div class="advantage__image">
+                            <img src="dist/images/Star.png"/>
+                        </div>
+                        <div class="advantage__info">
+                            <div class="advantage__name">Feel Like A Star</div>
+                            <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus
+                                ut, ultrices velit</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <div class="divider main__services-divider"></div>
+        <section class="portfolio" id="portfolio">
+            <article>
+                <h1 class="portfolio__title">Portfolio</h1>
+                <h3 class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula eget lacinia
+                    odio sem nec elit</h3>
+            </article>
+
+            <nav class="navigation portfolio__navigation">
+                <button class="navigation__headerBtn">All</button>
+                <button class="navigation__headerBtn">Web Design</button>
+                <button class="navigation__headerBtn">Graphic Design</button>
+                <button class="navigation__headerBtn">Artwork</button>
+            </nav>
+            <div class="portfolio__content">
+                <div class="portfolio__firstLine">
+                    <div class="portfolio__work"><img src="dist/images/1.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/2.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/3.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/4.png"/></div>
+                </div>
+                <div class="portfolio__secondLine">
+                    <div class="portfolio__work"><img src="dist/images/5.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/6.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/7.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/8.png"/></div>
+                </div>
+                <div class="portfolio__thirdLine">
+                    <div class="portfolio__work"><img src="dist/images/9.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/10.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/11.png"/></div>
+                    <div class="portfolio__work"><img src="dist/images/12.png"/></div>
+                </div>
+            </div>
+
+        </section>
+        <div class="divider main__portfolio-divider"></div>
+        <section class="about-us" id="about">
+            <h1 class="about-us__title">About us</h1>
+            <h3 class="about-us__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen est non commodo
+                luctus, nisi erat porttitor ligula eget lacinia
+                odio sem nec </h3>
+            <div class="about-us__workers">
+                <div class="worker">
+                    <div class="worker__image"><img src="dist/images/photo-3.png"></div>
+                    <div class="worker__info">
+                        <h3 class="worker__name">Adam Jensen</h3>
+                        <div class="worker__description">Quisque luctus, quam eget molestie commodo, lacus purus
+                            cursus
+                        </div>
+                    </div>
+                    <nav class="navigation worker__navigation-networks">
+                        <a class="navigation__worker-network" href="https://www.facebook.com"><img
+                                src="dist/images/Facebook.png"/></a>
+                        <a class="navigation__worker-network" href="https://www.google.com"><img
+                                src="dist/images/Google.png"/></a>
+                        <a class="navigation__worker-network" href="https://twitter.com"><img
+                                src="dist/images/Twitter.png"/></a>
+                        <a class="navigation__worker-network" href="http://htmlbook.ru"><img
+                                src="dist/images/LinkedIn.png"/></a>
+                    </nav>
+                </div>
+                <div class="worker">
+                    <div><img src="dist/images/photo-2.png"></div>
+                    <div>
+                        <h3 class="worker__name">Desmond Miles</h3>
+                        <div class="worker__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+                            qua
+                        </div>
+                    </div>
+                    <nav class="navigation worker__navigation-networks">
+                        <a class="navigation__worker-network" href="https://www.facebook.com"><img
+                                src="dist/images/Facebook.png"/></a>
+                        <a class="navigation__worker-network" href="https://www.google.com"><img
+                                src="dist/images/Google.png"/></a>
+                        <a class="navigation__worker-network" href="https://twitter.com"><img
+                                src="dist/images/Twitter.png"/></a>
+                        <a class="navigation__worker-network" href="http://htmlbook.ru"><img
+                                src="dist/images/LinkedIn.png"/></a>
+                    </nav>
+                </div>
+                <div class="worker">
+                    <div><img src="dist/images/photo.png"></div>
+                    <div>
+                        <h3 class="worker__name">Scolara Visari</h3>
+                        <div class="worker__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                            turp
+                        </div>
+                    </div>
+                    <nav class="navigation worker__navigation-networks">
+                        <a class="navigation__worker-network" href="https://www.facebook.com"><img
+                                src="dist/images/Facebook.png"/></a>
+                        <a class="navigation__worker-network" href="https://www.google.com"><img
+                                src="dist/images/Google.png"/></a>
+                        <a class="navigation__worker-network" href="https://twitter.com"><img
+                                src="dist/images/Twitter.png"/></a>
+                        <a class="navigation__worker-network" href="http://htmlbook.ru"><img
+                                src="dist/images/LinkedIn.png"/></a>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <div class="divider main__about-us-divider"></div>
+        <section class="contact" id="contact">
+            <article>
+                <h1 class="contact__title">Get a Quote</h1>
+                <p class="contact__description"> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimen Fusce
+                    dapibus, tellus ac cursus
+                    commodo, tortor mauris condimen Fusce dapibus, tellus ac cursus commodo, tortor mauris condimenL</p>
+            </article>
+            <section class="contact__feedback">
+                <form class="form contact__form" method="post">
+                    <label class="form__label">
+                        <input class="form__input form_name" type="text" placeholder="Name (Required)" required>
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input form_email" type="email" placeholder="Email (Required)" required>
+                    </label>
+                    <label class="form__label">
+                        <input class="form__input" type="text" placeholder="Subject">
+                    </label>
+                    <label class="form__label">
+                        <textarea class="form__input form__describe-area" type="text"
+                                  placeholder="Describe your project in detail..."></textarea>
+                    </label>
+                    <div class="form__submit-area">
+                        <button class="form__submit">Submit</button>
+                    </div>
+                </form>
+                <section class="contact__information">
+                    <article>
+                        <div class="contact__information-title">Contact Information</div>
+                        <p class="contact__information-description">Quisque hendrerit purus dapibus, ornare nibh vitae,
+                            viverra nib Quisque hendrerit purus
+                            dapibus, ornare nibh vitae, viverra nib Quisque hendrerit purus dapibus, ornare nibh vitae,
+                            viverra nib</p>
+                    </article>
+                    <div>
+                        <div class="contact__feedback-links">
+                            <img src="dist/images/location.png"/>
+                            <a class="contact__address"> Elm St. 14/05 Lost City </a>
+                        </div>
+                        <div class="contact__feedback-links">
+                            <img src="dist/images/phoneFooter.png"/>
+                            <a href="tel:03528 331 86 35" class="contact__phone"> 03528 331 86 35 </a>
+                        </div>
+                        <div class="contact__feedback-links">
+                            <img src="dist/images/mail.png"/>
+                            <a href="mailto:info@singolo.com" class="contact__mail">info@singolo.com</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <div class="divider main__contact-divider"></div>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__copyright">© Copyright 2013</div>
+            <nav class="navigation">
+                <a class="navigation__our-network" href="https://www.facebook.com"><img
+                        src="dist/images/Facebook.png"/></a>
+                <a class="navigation__our-network" href="https://www.google.com"><img
+                        src="dist/images/Google.png"/></a>
+                <a class="navigation__our-network" href="https://twitter.com"><img
+                        src="dist/images/Twitter.png"/></a>
+                <a class="navigation__our-network" href="http://htmlbook.ru"><img
+                        src="dist/images/LinkedIn.png"/></a>
+            </nav>
+        </div>
+    </footer>
+</div>
+<script src="dist/script/index.js"></script>
+</body>
+</html>
