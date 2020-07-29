@@ -2,10 +2,10 @@ import { call, put, takeLatest } from 'redux-saga/effects';
 import { getSelectedMonthInfoSuccess } from '../actions';
 import * as axios from 'axios';
 
-const fetchData = () => axios.get("https://api.nasa.gov/planetary/apod?api_key=f349WgzxLaFtNpgVjCHqkge0tiid36Wm4C6N5N7c&start_date=2020-06-25&end_date=2020-07-28");
+const fetchData = (currentDate,firstDayForLoadData) => axios.get(`https://api.nasa.gov/planetary/apod?api_key=f349WgzxLaFtNpgVjCHqkge0tiid36Wm4C6N5N7c&start_date=${firstDayForLoadData}&end_date=${currentDate}`);
 
-function* setMonthContent() {
-    const result = yield call(fetchData);
+function* setMonthContent({currentDate, firstDayForLoadData}) {
+    const result = yield call(fetchData,currentDate,firstDayForLoadData);
     yield put(getSelectedMonthInfoSuccess({
         monthInfo: [...result.data]
     }));

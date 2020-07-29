@@ -1,7 +1,8 @@
 import './day.scss'
-import React, { useEffect }  from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getSelectedMonthInfoRequest } from '../rootPage/actions';
+import { currentDate, firstDayForLoadData } from '../../utils';
 
 /**
  * @return {string}
@@ -39,7 +40,7 @@ const getMonth = month => {
 };
 
 export const Day = ({match}) => {
-    const {monthInfo} = useSelector(store=>store);
+    const {monthInfo} = useSelector(store => store);
     // const listOfData = location;
     const dispatch = useDispatch();
     let currentDay = match.url.slice(5, 16);
@@ -56,8 +57,8 @@ export const Day = ({match}) => {
         }
     }
 
-    useEffect(()=>{
-        monthInfo.length===0 && dispatch(getSelectedMonthInfoRequest())
+    useEffect(() => {
+        monthInfo.length === 0 && dispatch(getSelectedMonthInfoRequest({currentDate},{firstDayForLoadData}))
     });
 
     return (
