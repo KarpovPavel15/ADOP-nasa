@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
-import { reducerMonth } from '../modules/rootPage/reducer';
+import { reducerDay, reducerMonth } from '../modules/rootPage/reducer';
 
 export default combineReducers({
-    monthInfo: reducerMonth
+    monthInfo: reducerMonth,
+    dayInfo: reducerDay
 });

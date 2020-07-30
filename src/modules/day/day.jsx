@@ -1,47 +1,12 @@
 import './day.scss'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { getSelectedMonthInfoRequest } from '../rootPage/actions';
-import { currentDate, firstDayForLoadData } from '../../utils';
+import { getSelectedDayInfoRequest } from '../rootPage/actions';
+import { getMonth } from '../../utils';
 
-/**
- * @return {string}
- */
-
-const getMonth = month => {
-    switch (month) {
-        case 'Jan' :
-            return '01';
-        case 'Feb' :
-            return '02';
-        case 'Mar' :
-            return '03';
-        case 'Apr' :
-            return '04';
-        case 'May' :
-            return '05';
-        case 'Jun' :
-            return '06';
-        case 'Jul' :
-            return '07';
-        case 'Aug' :
-            return '08';
-        case 'Sep' :
-            return '09';
-        case 'Oct' :
-            return '10';
-        case 'Nov' :
-            return '11';
-        case 'Dec' :
-            return '12';
-        default :
-            return null
-    }
-};
 
 export const Day = ({match}) => {
-    const {monthInfo} = useSelector(store => store);
-    // const listOfData = location;
+    const {dayInfo} = useSelector(store => store);
     const dispatch = useDispatch();
     let currentDay = match.url.slice(5, 16);
     let month = currentDay.slice(0, 3);
@@ -50,23 +15,17 @@ export const Day = ({match}) => {
     month = getMonth(month);
     currentDay = `${year}-${month}-${day}`;
 
-    let infoCurrentDay = "";
-    for (let data in monthInfo) {
-        if (monthInfo[data].date === currentDay) {
-            infoCurrentDay = monthInfo[data];
-        }
-    }
 
     useEffect(() => {
-        monthInfo.length === 0 && dispatch(getSelectedMonthInfoRequest({currentDate},{firstDayForLoadData}))
-    });
+        dayInfo && dispatch(getSelectedDayInfoRequest({currentDay}))
+    },[]);
 
     return (
         <div>
             <p>Day: {currentDay}</p>
-            <p>Day: {infoCurrentDay.copyright}</p>
-            <p>Day: {infoCurrentDay.explanation}</p>
-            <img className="day__picture" src={infoCurrentDay.hdurl}/>
+            <p>Day: {dayInfo.copyright}</p>
+            <p>Day: {dayInfo.explanation}</p>
+            <img className="day__picture" src={dayInfo.hdurl}/>
         </div>
     )
 };
