@@ -3,10 +3,10 @@ import rootReducer from './reducer';
 import createSagaMiddleware from 'redux-saga';
 
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { sagaMonth } from '../modules/rootPage/saga';
+import { calendarSaga } from '../modules/day/saga';
 
 const sagas = [
-    sagaMonth
+    calendarSaga
 ];
 
 export const configureStore = () => {

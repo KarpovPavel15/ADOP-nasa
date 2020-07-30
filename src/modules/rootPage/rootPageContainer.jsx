@@ -1,16 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { RootPage } from './component';
-import { useDispatch, useSelector } from 'react-redux';
-import { getSelectedMonthInfoRequest } from './actions';
-import { currentDate, firstDayForLoadData } from '../../utils';
+import { useHistory } from "react-router-dom";
 
 export const RootPageContainer = () => {
-    const {monthInfo} = useSelector(store => store);
-    const dispatch = useDispatch();
+    const history = useHistory();
 
-    useEffect(() => {
-        dispatch(getSelectedMonthInfoRequest({currentDate, firstDayForLoadData}));
-    },[]);
-
-    return <RootPage info={monthInfo}/>;
+    return <RootPage history={history}/>;
 };
