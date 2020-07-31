@@ -7,7 +7,7 @@ export const RootPage = ({history}) => {
     const clickDay = event => history.push(`/${event.getFullYear()}-${event.getMonth()+1}-${event.getDate()}`);
 
     return (
-        <div className="app">
+        <div className="root-page">
             <Calendar
                 showNeighboringMonth={false}
                 onClickDay={event => clickDay(event)}

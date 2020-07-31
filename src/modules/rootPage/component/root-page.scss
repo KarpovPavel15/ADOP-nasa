@@ -1,0 +1,23 @@
+.root-page {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  background-color: khaki;
+}
+
+.react-calendar {
+  display: flex;
+  flex-direction: column;
+
+  &__month-view {
+    &__weekdays {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 1024px) {
+  .root-page {
+    padding: 0 !important;
+  }
+}

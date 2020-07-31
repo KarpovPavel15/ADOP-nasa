@@ -25,6 +25,6 @@ export const DayContainer = ({match}) => {
     };
 
     return (
-        <Day returnToCalendar={returnToCalendar} dayInfo={dayInfo} currentDay={currentDay} />
+        <Day returnToCalendar={returnToCalendar} dayInfo={dayInfo} currentDay={currentDay}/>
     )
 };
